@@ -1,0 +1,141 @@
+/* Spit Window*/
+.leftside, .rightside {
+  height: 50vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .leftside, .rightside {
+    height: 100vh;
+ }
+}
+
+.row,.row>*{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-check{
+  font-size: 12px;
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.submit{
+  width: 100%;
+  background-color: #61acb3 !important;
+  color: white !important;
+}
+
+.login-form{
+  width: 20rem;
+}
+
+/* Anchor Tag */
+a {
+  color: #61acb3 !important;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+/* Floating label */
+.custom-form .btn-primary {
+  background-color: #61acb3; 
+  border-color: #61acb3; 
+}
+
+.custom-form .form-group {
+  position: relative;
+  padding-top: 16px;
+  margin-bottom: 16px;
+}
+
+.custom-form .form-group .animated-label {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  font-weight: 300;
+  opacity: 0.5;
+  cursor: text;
+  transition: 0.2s ease all;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.custom-form .form-group .animated-label:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  height: 2px;
+  width: 10px;
+  visibility: hidden;
+  background-color: #61acb3;
+  transition: 0.2s ease all;
+}
+
+.custom-form .form-group.not-empty .animated-label {
+  top: 0;
+  font-size: 12px;
+}
+
+.custom-form .form-group .form-control {
+  position: relative;
+  z-index: 1;
+  border-radius: 0;
+  border-width: 0 0 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  height: auto;
+  padding: 3px 0 5px;
+}
+
+.custom-form .form-group .form-control:focus {
+  box-shadow: none;
+  border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+.custom-form .form-group .form-control:focus ~ .animated-label {
+  top: 0;
+  opacity: 1;
+  color: #61acb3;
+  font-size: 12px;
+}
+
+.custom-form .form-group .form-control:focus ~ .animated-label:after {
+  visibility: visible;
+  width: 100%;
+  left: 0;
+}
+
+.input-label{
+  top: 0 !important;
+  opacity: 1 !important;
+  color: #61acb3 !important;
+  font-size: 12px !important;
+}
