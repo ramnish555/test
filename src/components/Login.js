@@ -7,7 +7,7 @@ const Login = () => {
 
     const formSubmit = (event) => {
         event.preventDefault();
-        history.push("/home",{ "name": input["name"]});
+        history.push("/test/home",{ "name": input["name"]});
     }
 
     const onInput = (event) => {

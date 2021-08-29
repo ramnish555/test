@@ -6,7 +6,7 @@ const Home = () => {
     const history = useHistory();
 
     if(location.state === undefined){
-        history.push(`/login`);
+        history.push(`/test`);
     }
 
     return(
